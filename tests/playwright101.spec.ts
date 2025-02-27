@@ -55,11 +55,11 @@ test.describe.parallel('LambdaTest Playwright 101', () => {
     // Fill form
     //fill
     await page.fill("input[name='name']", "John Doe",{timeout: 5000});
-    await page.fill("input[name='email']", "john.doe@example.com",{timeout: 5000});
+    //await page.fill("input[name='email']", "john.doe@example.com",{timeout: 5000});
     await page.fill("input[name='password']", "john.doe@example.com",{timeout: 5000});
     await page.fill("input[name='company']", "example",{timeout: 5000});
     await page.fill("input[name='website']", "example",{timeout: 5000});
-    await page.fill("input[name='phone']", "1234567890",{timeout: 5000});
+    //await page.fill("input[name='phone']", "1234567890",{timeout: 5000});
     await page.fill("input[name='address_line2']", "123 Test Street",{timeout: 5000});
     await page.fill("input[name='address_line1']", "123 Test Street",{timeout: 5000});
     await page.fill("input[name='city']", "Test City",{timeout: 5000});
