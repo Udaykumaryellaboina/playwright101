@@ -1,8 +1,7 @@
 # Gitpod configuration file
 tasks:
-  -command:|
-  export LT_USERNAME="yellaboinaudaykumar@gmail.com" 
-  export LT_ACCESS_KEY='ZKb9IPvLjLrDlWnfVirI1vWDjaFUrrmH3rFoLVprT7CI8KF'
-  npm install
-  node playwright-parallel.js
-
+  - command: |
+      export LT_USERNAME="yellaboinaudaykumar@gmail.com"
+      export LT_ACCESS_KEY="ZKb9IPvLjLrDlWnfVirI1vWDjaFUrrmH3rFoLVprT7CI8KF"
+      npm install
+      node playwright-parallel.js

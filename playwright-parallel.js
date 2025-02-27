@@ -1,20 +1,5 @@
 import { test, expect } from '@playwright/test';
 
-// LambdaTest Capabilities
-const capabilities = {
-  browserName: 'Chrome', // Can be Chrome, MicrosoftEdge, pw-chromium, pw-firefox, pw-webkit
-  browserVersion: 'latest',
-  'LT:Options': {
-    platform: 'Windows 10',
-    build: 'Playwright Parallel Tests',
-    name: 'Playwright LambdaTest Parallel Execution',
-    user: process.env.LT_USERNAME,
-    accessKey: process.env.LT_ACCESS_KEY,
-    network: true,
-    video: true,
-    console: true,
-  }
-};
 
 test.describe.parallel('LambdaTest Playwright Parallel Execution', () => {
   
