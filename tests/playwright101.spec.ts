@@ -53,21 +53,22 @@ test.describe.parallel('LambdaTest Playwright 101', () => {
     //await expect(page.locator('.alert-danger')).toHaveText(/Please fill in the fields/);
 
     // Fill form
-    await page.fill("input[name='name']", "John Doe");
-    await page.fill("input[name='email']", "john.doe@example.com");
-    await page.fill("input[name='password']", "john.doe@example.com");
-    await page.fill("input[name='company']", "example");
-    await page.fill("input[name='website']", "example");
-    await page.fill("input[name='phone']", "1234567890");
-    await page.fill("input[name='address_line2']", "123 Test Street");
-    await page.fill("input[name='address_line1']", "123 Test Street");
-    await page.fill("input[name='city']", "Test City");
-    //await page.selectOption("select[name='country']", { label: "United States" });
-//await page.fill("input[placeholder='State']", "Test City");
-    await page.fill("input[name='zip']", "1234");
+    //fill
+    await page.fill("input[name='name']", "John Doe",{timeout: 5000});
+    await page.fill("input[name='email']", "john.doe@example.com",{timeout: 5000});
+    await page.fill("input[name='password']", "john.doe@example.com",{timeout: 5000});
+    await page.fill("input[name='company']", "example",{timeout: 5000});
+    await page.fill("input[name='website']", "example",{timeout: 5000});
+    await page.fill("input[name='phone']", "1234567890",{timeout: 5000});
+    await page.fill("input[name='address_line2']", "123 Test Street",{timeout: 5000});
+    await page.fill("input[name='address_line1']", "123 Test Street",{timeout: 5000});
+    await page.fill("input[name='city']", "Test City",{timeout: 5000});
+    await page.selectOption("select[name='country']", { label: "United States" });
+await page.fill("input[placeholder='State']", "Test City",{timeout: 5000});
+    await page.fill("input[name='zip']", "1234",{timeout: 5000});
 
     // Submit form
-    await page.click('button:has-text("Submit")');
+    await page.click('button:has-text("Submit")',{timeout: 5000});
 
     // Validate success message
     await expect(page.locator('.success-msg')).toHaveText(/Thanks for contacting us, we will get back to you shortly./);
