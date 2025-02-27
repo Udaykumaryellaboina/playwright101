@@ -2,8 +2,9 @@
 tasks:
   - name: Install dependencies
     init: npm install  # Install project dependencies
-    command: npx playwright install  # Install Playwright dependencies
+    command: npm init playwright@latest  # Install Playwright dependencies
+
   
   - name: Run Playwright Tests
-    command: npx playwright test --config=lambdatest.config.ts
+    command: npx playwright test 
 

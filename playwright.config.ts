@@ -8,6 +8,7 @@ export default defineConfig({
     video: 'on',  // Records test execution
     screenshot: 'on',  // Takes screenshots on failure
     headless: true,  // Run in headless mode
+    
   },
   projects: [
     {
