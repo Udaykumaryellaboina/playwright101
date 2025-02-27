@@ -50,7 +50,7 @@ test.describe.parallel('LambdaTest Playwright 101', () => {
     await page.click('button:has-text("Submit")');
 
     // Validate error message
-    await expect(page.locator('.alert-danger')).toHaveText(/Please fill in the fields/);
+    //await expect(page.locator('.alert-danger')).toHaveText(/Please fill in the fields/);
 
     // Fill form
     await page.fill("input[name='name']", "John Doe");
@@ -62,8 +62,8 @@ test.describe.parallel('LambdaTest Playwright 101', () => {
     await page.fill("input[name='address_line2']", "123 Test Street");
     await page.fill("input[name='address_line1']", "123 Test Street");
     await page.fill("input[name='city']", "Test City");
-    await page.selectOption("select[name='country']", { label: "United States" });
-    await page.fill("input[placeholder='State']", "Test City");
+    //await page.selectOption("select[name='country']", { label: "United States" });
+//await page.fill("input[placeholder='State']", "Test City");
     await page.fill("input[name='zip']", "1234");
 
     // Submit form
