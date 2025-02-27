@@ -1,10 +1,8 @@
 # Gitpod configuration file
 tasks:
-  - name: Install dependencies
-    init: npm install  # Install project dependencies
-    command: npm init playwright@latest  # Install Playwright dependencies
-
-  
-  - name: Run Playwright Tests
-    command: npx playwright test 
+  -command:|
+  export LT_USERNAME="yellaboinaudaykumar@gmail.com" 
+  export LT_ACCESS_KEY='ZKb9IPvLjLrDlWnfVirI1vWDjaFUrrmH3rFoLVprT7CI8KF'
+  npm install
+  node playwright-parallel.js
 
