@@ -1,0 +1,9 @@
+# Gitpod configuration file
+tasks:
+  - name: Install dependencies
+    init: npm install  # Install project dependencies
+    command: npx playwright install  # Install Playwright dependencies
+  
+  - name: Run Playwright Tests
+    command: npx playwright test --config=lambdatest.config.ts
+
