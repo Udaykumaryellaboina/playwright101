@@ -6,3 +6,4 @@ tasks:
       npm install
       npx playwright install --with-deps
       npx playwright test
+      node playwright-single.js
